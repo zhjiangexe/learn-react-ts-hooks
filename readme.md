@@ -52,3 +52,14 @@ hook
 2 phases when you on redner component
 - initRender
 - rerender
+
+
+## REDUX
+
+Store is a front end database which in memory somewhere
+
+Actions: a component will trigger a function which start some action
+
+Reducer: Action will go into a reducer, look what has to do in the store
+
+Store: one Reducer demand that store and component can read it

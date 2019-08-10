@@ -74,5 +74,10 @@ export default function App(): JSX.Element {
 
 const root = document.getElementById('app-root')
 
-ReactDom.render(<App />, root)
-
+// ReactDom.render(<App />, root)
+ReactDom.render(
+  <Parent>
+    <Child />
+  </Parent>,
+  root
+)
