@@ -1,12 +1,12 @@
-import React from 'react'
-const Store = React.createContext()
-
-export function Parent(props) {
-  const obj = {text: 'random text'}
-  return <Store.Provider value={obj}>{props.children}</Store.Provider>
-}
-
-export function Child() {
-  const hook = React.useContext(Store)
-  return <div>{hook.text}</div>
+import React, {Fragment, useContext} from 'react'
+import {Store} from './Store'
+export default function App() {
+  const store = useContext(Store)
+  return (
+    <Fragment>
+      {console.log(store)}
+      <h1>Rock</h1>
+      <p>megaman</p>
+    </Fragment>
+  )
 }
